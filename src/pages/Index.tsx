@@ -5,14 +5,14 @@ export default function Index() {
       <nav className="fixed top-0 left-0 w-full z-50 bg-white border-b border-black">
         <div className="container mx-auto px-4 md:px-8 py-4 flex justify-between items-center">
           <a href="/" className="text-xl font-bold tracking-tighter">
-            GRIDFORM
+            ATELIER FORM
           </a>
           <div className="flex space-x-8">
             <a href="#work" className="text-sm uppercase tracking-widest hover:text-red-600 transition-colors">
-              Работы
+              Коллекции
             </a>
             <a href="#about" className="text-sm uppercase tracking-widest hover:text-red-600 transition-colors">
-              О нас
+              О студии
             </a>
             <a href="#contact" className="text-sm uppercase tracking-widest hover:text-red-600 transition-colors">
               Контакты
@@ -26,16 +26,21 @@ export default function Index() {
         <div className="grid grid-cols-12 gap-4">
           <div className="col-span-12 md:col-span-7 mb-8 md:mb-0">
             <h1 className="text-8xl md:text-9xl font-bold tracking-tighter leading-none mb-6">
-              GRID
+              ВАШ
               <br />
-              FORM
+              КРОЙ
             </h1>
             <p className="text-xl max-w-xl">
-              Ясность. Точность. Структура. Мы превращаем сложные идеи в чистый, функциональный дизайн, который говорит сам за себя.
+              Индивидуальный пошив по вашим меркам. Мы создаём одежду, которая повторяет линии вашего тела и характера — точно, чисто, по фигуре.
             </p>
           </div>
           <div className="col-span-12 md:col-span-5 flex items-center justify-center">
-            <div className="relative w-full aspect-square bg-red-600">
+            <div className="relative w-full aspect-square bg-red-600 overflow-hidden">
+              <img
+                src="https://cdn.poehali.dev/projects/db656dab-a920-477d-8485-ca59572e10e2/files/5001bdb4-a5b7-48e8-b029-5eddfcf24906.jpg"
+                alt="Пошив на заказ"
+                className="w-full h-full object-cover mix-blend-multiply"
+              />
               <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-black"></div>
             </div>
           </div>
@@ -45,40 +50,46 @@ export default function Index() {
       {/* Work Section */}
       <section id="work" className="py-20 px-4 md:px-8 bg-black text-white">
         <div className="container mx-auto">
-          <h2 className="text-6xl font-bold tracking-tighter mb-12">РАБОТЫ</h2>
+          <h2 className="text-6xl font-bold tracking-tighter mb-12">КОЛЛЕКЦИИ</h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Project 1 */}
             <div className="group">
               <div className="aspect-square bg-white mb-4 overflow-hidden">
-                <div className="w-full h-full flex items-center justify-center bg-neutral-100 group-hover:bg-red-600 transition-colors duration-300">
-                  <span className="text-black text-8xl font-bold">01</span>
-                </div>
+                <img
+                  src="https://cdn.poehali.dev/projects/db656dab-a920-477d-8485-ca59572e10e2/files/5001bdb4-a5b7-48e8-b029-5eddfcf24906.jpg"
+                  alt="Пальто на заказ"
+                  className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500 scale-100 group-hover:scale-105"
+                />
               </div>
-              <h3 className="text-xl font-bold mb-2">TechFlow Solutions</h3>
-              <p className="text-neutral-400">Полный брендинг и типографическая система для финтех-стартапа</p>
+              <h3 className="text-xl font-bold mb-2">Пальто «Линия»</h3>
+              <p className="text-neutral-400">Шерстяное пальто прямого кроя, сшитое по индивидуальным меркам</p>
             </div>
 
             {/* Project 2 */}
             <div className="group">
               <div className="aspect-square bg-white mb-4 overflow-hidden">
-                <div className="w-full h-full flex items-center justify-center bg-neutral-100 group-hover:bg-red-600 transition-colors duration-300">
-                  <span className="text-black text-8xl font-bold">02</span>
-                </div>
+                <img
+                  src="https://cdn.poehali.dev/projects/db656dab-a920-477d-8485-ca59572e10e2/files/0e6fdcfe-f68a-4ee4-9f00-ccbcbf4261c2.jpg"
+                  alt="Платье на заказ"
+                  className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500 scale-100 group-hover:scale-105"
+                />
               </div>
-              <h3 className="text-xl font-bold mb-2">Alpine Ventures</h3>
-              <p className="text-neutral-400">Минималистичная визуальная коммуникация для инвестиционного фонда</p>
+              <h3 className="text-xl font-bold mb-2">Платье «Форма»</h3>
+              <p className="text-neutral-400">Вечернее платье минималистичного силуэта из премиальной ткани</p>
             </div>
 
             {/* Project 3 */}
             <div className="group">
               <div className="aspect-square bg-white mb-4 overflow-hidden">
-                <div className="w-full h-full flex items-center justify-center bg-neutral-100 group-hover:bg-red-600 transition-colors duration-300">
-                  <span className="text-black text-8xl font-bold">03</span>
-                </div>
+                <img
+                  src="https://cdn.poehali.dev/projects/db656dab-a920-477d-8485-ca59572e10e2/files/609d5c5b-31a1-4073-b960-6e1df048c014.jpg"
+                  alt="Костюм на заказ"
+                  className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500 scale-100 group-hover:scale-105"
+                />
               </div>
-              <h3 className="text-xl font-bold mb-2">Nova Industries</h3>
-              <p className="text-neutral-400">Модульная дизайн-система для производственной компании</p>
+              <h3 className="text-xl font-bold mb-2">Костюм «Структура»</h3>
+              <p className="text-neutral-400">Деловой костюм ручной работы с идеальной посадкой по фигуре</p>
             </div>
           </div>
         </div>
@@ -89,38 +100,42 @@ export default function Index() {
         <div className="container mx-auto">
           <div className="grid grid-cols-12 gap-8">
             <div className="col-span-12 md:col-span-5">
-              <h2 className="text-6xl font-bold tracking-tighter mb-8">О НАС</h2>
-              <div className="aspect-[4/5] bg-neutral-100 relative mb-8 md:mb-0">
-                <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-3/4 h-3/4 border-2 border-black"></div>
+              <h2 className="text-6xl font-bold tracking-tighter mb-8">О СТУДИИ</h2>
+              <div className="aspect-[4/5] bg-neutral-100 relative mb-8 md:mb-0 overflow-hidden">
+                <img
+                  src="https://cdn.poehali.dev/projects/db656dab-a920-477d-8485-ca59572e10e2/files/609d5c5b-31a1-4073-b960-6e1df048c014.jpg"
+                  alt="Студия пошива"
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
             <div className="col-span-12 md:col-span-7 md:pt-24">
               <p className="text-xl mb-6">
-                GRIDFORM - дизайн-студия, преданная принципам ясности, точности и осмысленной коммуникации. Мы верим, что великий дизайн незаметен - он просто работает.
+                ATELIER FORM — студия персональной одежды, где каждая вещь создаётся под конкретного человека. Мы верим, что идеальная посадка — это не роскошь, а основа стиля.
               </p>
               <p className="mb-6">
-                Наш подход основан на системном мышлении и типографическом мастерстве. Мы используем модульные сетки, чистую гротескную типографику, асимметричные композиции и предметную фотографию для создания дизайна, который говорит ясно и убедительно.
+                Наш подход основан на ручном крое, точных мерках и работе с премиальными тканями. Мы создаём одежду минималистичных силуэтов, которая подчёркивает индивидуальность и служит годами.
               </p>
               <p className="mb-6">
-                Основанная дизайнерами, убежденными, что форма следует за функцией, мы сотрудничаем с прогрессивными брендами, создавая визуальные языки, которые проверены временем.
+                Студию основали портные, убеждённые, что форма следует за фигурой. Мы шьём для тех, кто ценит чистые линии, качество и вещи, сделанные именно для них.
               </p>
               <div className="grid grid-cols-2 gap-4 mt-12">
                 <div>
                   <h3 className="text-sm uppercase tracking-widest mb-2">Принципы</h3>
                   <ul className="space-y-2">
-                    <li>Минимализм</li>
-                    <li>Модульные сетки</li>
-                    <li>Гротескная типографика</li>
-                    <li>Предметная фотография</li>
+                    <li>Индивидуальные мерки</li>
+                    <li>Ручной крой</li>
+                    <li>Премиальные ткани</li>
+                    <li>Чистые силуэты</li>
                   </ul>
                 </div>
                 <div>
                   <h3 className="text-sm uppercase tracking-widest mb-2">Услуги</h3>
                   <ul className="space-y-2">
-                    <li>Брендинг</li>
-                    <li>Визуальные системы</li>
-                    <li>Типографика</li>
-                    <li>Цифровой дизайн</li>
+                    <li>Пошив на заказ</li>
+                    <li>Капсульный гардероб</li>
+                    <li>Подбор тканей</li>
+                    <li>Подгонка по фигуре</li>
                   </ul>
                 </div>
               </div>
@@ -135,12 +150,12 @@ export default function Index() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             <div>
               <h2 className="text-6xl font-bold tracking-tighter mb-8">КОНТАКТЫ</h2>
-              <p className="text-xl mb-8">Заинтересованы в сотрудничестве? Давайте обсудим ваш проект.</p>
+              <p className="text-xl mb-8">Хотите вещь, сшитую именно для вас? Запишитесь на консультацию и снятие мерок.</p>
               <div className="space-y-4">
                 <p className="flex items-center">
                   <span className="w-24 text-sm uppercase tracking-widest">Почта</span>
-                  <a href="mailto:hello@gridform.ru" className="hover:underline">
-                    hello@gridform.ru
+                  <a href="mailto:hello@atelierform.ru" className="hover:underline">
+                    hello@atelierform.ru
                   </a>
                 </p>
                 <p className="flex items-center">
@@ -150,7 +165,7 @@ export default function Index() {
                   </a>
                 </p>
                 <p className="flex items-center">
-                  <span className="w-24 text-sm uppercase tracking-widest">Адрес</span>
+                  <span className="w-24 text-sm uppercase tracking-widest">Студия</span>
                   <span>Москва, Россия</span>
                 </p>
               </div>
@@ -194,7 +209,7 @@ export default function Index() {
                   type="submit"
                   className="mt-8 px-8 py-3 bg-black text-white text-sm uppercase tracking-widest hover:bg-white hover:text-black transition-colors"
                 >
-                  Отправить
+                  Записаться
                 </button>
               </form>
             </div>
@@ -205,13 +220,13 @@ export default function Index() {
       {/* Footer */}
       <footer className="py-8 px-4 md:px-8 bg-black text-white">
         <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
-          <p className="text-sm mb-4 md:mb-0">2025 GRIDFORM Studio. Все права защищены.</p>
+          <p className="text-sm mb-4 md:mb-0">2025 ATELIER FORM. Все права защищены.</p>
           <div className="flex space-x-8">
             <a href="#" className="text-sm uppercase tracking-widest hover:text-red-600 transition-colors">
               Instagram
             </a>
             <a href="#" className="text-sm uppercase tracking-widest hover:text-red-600 transition-colors">
-              Behance
+              Pinterest
             </a>
             <a href="#" className="text-sm uppercase tracking-widest hover:text-red-600 transition-colors">
               Telegram
